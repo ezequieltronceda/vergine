@@ -31,9 +31,7 @@ nav {
 .boton-nav {
     color: #B0906F;
 }
-.deshabilitado {
-    color: red;
-}
+
 nav ul {
     display: flex;
     justify-content: space-evenly;
