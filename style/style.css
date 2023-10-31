@@ -202,39 +202,18 @@ h2 {
     
 
 .productos {
-    box-sizing: border-box;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
-  "banner banner banner"
-  "img1 img2 img3"
-  "img4 img5 img6";
+  box-sizing: border-box;
+  display: flex;
   max-width: 100%;
   padding: 0 1rem;
   width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 
+}
 
-}
-.prd-img1 {
-    grid-area: img1;
-}
-.prd-img2 {
-    grid-area: img2;
-}
-.prd-img3 {
-    grid-area: img3;
-}
-.prd-img4 {
-    grid-area: img4;
-}
-.prd-img5 {
-    grid-area: img5;
-}
-.prd-img6 {
-    grid-area: img6;
-}
 .banner-prd {
     grid-area: banner;
 }
