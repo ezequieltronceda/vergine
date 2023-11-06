@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 * {
     margin: 0  ;
@@ -263,7 +264,7 @@ h2 {
     padding: 0 1rem;
     grid-template-areas: 
     "img1 img1 texto1 "
-    "texto2 texto2 img2"
+    "texto2 texto2 ."
     "texto3 img3 texto4 ";
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -274,6 +275,7 @@ h2 {
 .informacion p {
     justify-content: center;
     align-self: center;
+    font-family: 'Roboto', sans-serif;
 }
 .informacion img {
     width: 100%;
@@ -299,10 +301,7 @@ h2 {
     grid-area: img1;
     
 }
-.imagen-conocenos-2 {
-    grid-area: img2;
-    
-}
+
 .imagen-conocenos-3 {
     grid-area: img3;
     
@@ -310,6 +309,13 @@ h2 {
 
 
 
+@media only screen and (max-width:950px) {
+    .imagen-conocenos-3 {
+        display: none;
+    }
+}
+    
+    
 
 @media only screen and (max-width:500px) {
             header {
@@ -336,15 +342,13 @@ h2 {
                 "img1"
                 "texto1 "
                 "texto2 "
-                "img2"
+                "."
                 "texto3 " 
                 "texto4 ";
                 grid-template-columns:100%;
                 grid-template-rows: repeat(6,1fr);
                     }
-            .imagen-conocenos-3 {
-                display: none;
-            }
+           
             .subtitulo{
                 display: none;
             }
