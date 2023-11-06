@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 * {
     margin: 0  ;
     padding: 0%  ;
@@ -261,7 +262,7 @@ h2 {
     display: grid;
     padding: 0 1rem;
     grid-template-areas: 
-    "img1 texto1 texto1 "
+    "img1 img1 texto1 "
     "texto2 texto2 img2"
     "texto3 img3 texto4 ";
     grid-template-columns: repeat(3,1fr);
@@ -279,23 +280,24 @@ h2 {
     height: 100%;
 }
 .trayectoria-descripcion {
-    background-color: red;
+    
     grid-area: texto1;
 }
 .perfeccionamiento-descripcion {
-    background-color: blue;
+   
     grid-area: texto2;
 }
 .familiar-descripcion {
-    background-color: yellow;
+   
     grid-area: texto3;
 }
 .mas-informacion {
-    background-color: green;
+    
     grid-area: texto4;
 }
 .imagen-conocenos-1 {
     grid-area: img1;
+    
 }
 .imagen-conocenos-2 {
     grid-area: img2;
@@ -305,6 +307,7 @@ h2 {
     grid-area: img3;
     
 }
+
 
 
 
