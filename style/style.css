@@ -307,6 +307,21 @@ h2 {
     
 }
 
+/* Novedades */
+
+.noticia {
+    
+    padding: 2% 5% 0% 5%;
+    font-family: 'Roboto', sans-serif;
+    color: #00CED1;
+}
+.noticia h2 {
+   color:  #800080 ;
+}
+.noticia p {
+    color: black;
+}
+
 
 
 @media only screen and (max-width:950px) {
