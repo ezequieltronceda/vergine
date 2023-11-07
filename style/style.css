@@ -243,9 +243,7 @@ h2 {
 .banner-productos p {
     align-self: center;
 }
-.nombre-producto {
-    color: #7A4333;
-}
+
 .boton-compra {
     background-color: #B0906F;
     color: #337A65;
@@ -253,7 +251,9 @@ h2 {
 .fondo-card {
     background-color: #D2F2FD;
 }
-
+.nombre-producto {
+    color: #7A4333;
+}
 .precio {
     color: red;
 }
