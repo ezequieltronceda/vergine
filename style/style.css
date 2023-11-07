@@ -331,6 +331,9 @@ h2 {
     .imagen-conocenos-3 {
         display: none;
     }
+    .mapa {
+        display: none   ;
+    }
 }
     
     
@@ -370,8 +373,6 @@ h2 {
             .subtitulo{
                 display: none;
             }
-            .mapa {
-                display: none   ;
-            }
+            
 
         }
