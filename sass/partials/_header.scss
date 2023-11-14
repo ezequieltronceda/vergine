@@ -8,7 +8,12 @@ header {
    
     img {
         width: 25%;
+        transition: transform 100ms ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
+    
     nav {
         width: 100%;
     
@@ -24,11 +29,15 @@ header {
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 .boton-nav {
                     color: #B0906F;
+                    transition: transform 100ms ease-in-out, color 100ms ease-in-out;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
                 
             }
         }
     }
 }
-
 

@@ -52,3 +52,16 @@
             }
 
         }
+
+        @media screen and (max-width: 768px) {
+   
+            .card {
+                width: calc(50% - 20px); 
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .card {
+                width: 100%; 
+            }
+        }

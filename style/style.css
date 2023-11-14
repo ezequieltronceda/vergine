@@ -24,6 +24,10 @@ header {
 }
 header img {
   width: 25%;
+  transition: transform 100ms ease-in-out;
+}
+header img:hover {
+  transform: scale(1.2);
 }
 header nav {
   width: 100%;
@@ -41,6 +45,10 @@ header nav ul li {
 }
 header nav ul li .boton-nav {
   color: #B0906F;
+  transition: transform 100ms ease-in-out, color 100ms ease-in-out;
+}
+header nav ul li .boton-nav:hover {
+  transform: scale(1.1);
 }
 
 /* body */
@@ -204,34 +212,61 @@ footer .tel {
   align-self: center;
 }
 
-.fondo-card {
+.card-catalogo {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
   background-color: #D2F2FD;
+  border-radius: 10px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in, backgound-color 1s ease-out 100ms;
+  display: flex;
+  flex-direction: column;
 }
-
-.carta {
-  transition: background-color 1s ease-out 100ms;
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
 }
-
-.carta:hover {
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
   background-color: rgb(180, 216, 245);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.boton-compra {
-  background-color: #B0906F;
-  color: #337A65;
-}
-
-.boton-compra:hover {
-  background-color: #B0796F;
-}
-
-.nombre-producto {
+.card-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
   color: #7A4333;
 }
 
-.precio {
-  color: red;
+.buy-button {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #B0906F;
+  color: #337A65;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.buy-button:hover {
+  background-color: #B0796F;
+  transform: scale(1.1);
 }
 
 /* Quienes somos */
@@ -325,6 +360,16 @@ footer .tel {
   }
   .mapa {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
   }
 }
 
