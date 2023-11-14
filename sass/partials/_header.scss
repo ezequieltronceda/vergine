@@ -1,0 +1,34 @@
+header {
+    
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    background-color: #D2F2FD;
+    display: flex;
+    justify-content: space-around;
+   
+    img {
+        width: 25%;
+    }
+    nav {
+        width: 100%;
+    
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            
+            li {
+                list-style: none;
+                margin: 20px;
+                vertical-align: bottom;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                .boton-nav {
+                    color: #B0906F;
+                }
+                
+            }
+        }
+    }
+}
+
+

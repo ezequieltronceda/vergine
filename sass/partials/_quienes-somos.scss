@@ -1,0 +1,53 @@
+.informacion {
+    box-sizing: border-box;
+    max-width: 100%;
+    display: grid;
+    padding: 0 1rem;
+    grid-template-areas: 
+    "img1 img1 texto1 "
+    "texto2 texto2 ."
+    "texto3 img3 texto4 ";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    max-width: 100%;
+    padding: 0 1rem;
+    width: 100%;
+    
+    p {
+        justify-content: center;
+        align-self: center;
+        font-family: $roboto
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .trayectoria-descripcion {
+    
+        grid-area: texto1;
+    }
+    .perfeccionamiento-descripcion {
+       
+        grid-area: texto2;
+    }
+    .familiar-descripcion {
+       
+        grid-area: texto3;
+    }
+    .mas-informacion {
+        
+        grid-area: texto4;
+    }
+    .imagen-conocenos-1 {
+        grid-area: img1;
+        
+    }
+    
+    .imagen-conocenos-3 {
+        grid-area: img3;
+        
+    }
+    
+}
+

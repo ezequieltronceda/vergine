@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import "./partials/variables";
+
+* {
+    margin: 0  ;
+    padding: 0 ;
+    box-sizing: border-box;
+ 
+}
+
+
+
+
+/*#DCFAF1  */
+body {
+    height: 100%;
+}
+
+/* header */
+
+
+@import "./partials/header";
+
+
+
+
+/* body */
+main {
+    background-color: $color-fondo;
+    border-bottom: 1px solid black;
+    p {
+        font-style: italic;
+        font-family: $roboto;
+        
+    }
+}
+
+/* index */ 
+
+
+@import "./partials/index";
+    
+
+
+
+
+
+    
+
+/* footer */
+
+
+@import "./partials/footer";
+  
+/* pagina de contacto */
+
+
+@import "./partials/contacto";
+
+/* Catalogo */
+
+@import "./partials/catalogo";
+
+
+
+/* Quienes somos */
+
+@import "./partials/quienes-somos";
+
+/* Novedades */
+
+@import "./partials/novedades";
+
+// media querys
+@import "./partials/media-querys";
+

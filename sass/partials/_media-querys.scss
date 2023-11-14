@@ -1,0 +1,54 @@
+@media only screen and (max-width:950px) {
+    .imagen-conocenos-3 {
+        display: none;
+    }
+}
+    
+    
+
+@media only screen and (max-width:500px) {
+            header {
+            
+                flex-direction: column;
+            }
+            nav {
+                ul {
+                        
+                    display: flex;
+                    width: 50%;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: baseline; 
+                }
+            }
+            .componentes {
+                display: flex;
+                align-content: stretch;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                h3 {
+                    display: none;
+                }
+             }
+              
+            .informacion {
+                grid-template-areas: 
+                "img1"
+                "texto1 "
+                "texto2 "
+                "."
+                "texto3 " 
+                "texto4 ";
+                grid-template-columns:100%;
+                grid-template-rows: repeat(6,1fr);
+                    }
+           
+            .subtitulo{
+                display: none;
+            }
+            .mapa {
+                display: none   ;
+            }
+
+        }
