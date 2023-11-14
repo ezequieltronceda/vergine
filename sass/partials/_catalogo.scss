@@ -46,14 +46,28 @@
       }
       
   }
+
+
   
-  .boton-compra {
-      background-color: #B0906F;
-      color: #337A65;
-  }
+
   .fondo-card {
       background-color: #D2F2FD;
   }
+  .carta {
+   transition: background-color 1s ease-out 100ms; 
+  }
+  .carta:hover {
+    background-color: rgb(180, 216, 245);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .boton-compra {
+    background-color: #B0906F;
+    color: #337A65;
+}
+.boton-compra:hover {
+    background-color:#B0796F ;
+}
+
   .nombre-producto {
       color: #7A4333;
   }
