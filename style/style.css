@@ -323,6 +323,13 @@ footer .tel {
   color: black;
 }
 
+.rainbow {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+
 .gran-titulo {
   color: #800080;
 }
