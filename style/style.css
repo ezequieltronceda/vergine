@@ -265,11 +265,10 @@ footer .tel {
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .buy-button:hover {
   background-color: #B0796F;
-  transform: scale(1.1);
 }
 
 /* Quienes somos */
