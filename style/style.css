@@ -21,6 +21,9 @@ header {
   background-color: #D2F2FD;
   display: flex;
   justify-content: space-around;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
 }
 header img {
   width: 25%;
