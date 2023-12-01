@@ -149,15 +149,47 @@ footer .tel {
 }
 
 /* pagina de contacto */
-.mapa {
+.mapatx {
   text-align: left;
 }
 
-.contacto-telefono {
-  font-weight: 700;
-  color: #7DBAA8;
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.map {
+  width: 50%;
+  margin: auto;
+}
+
+.adress {
+  margin-left: 12px;
+  font-weight: 200;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  color: transparent;
+  background: repeating-linear-gradient(35deg, #253B34 0px 2px, #7DBAA8 0px 4px);
+  mix-blend-mode: multiply;
+  animation: none 40000ms infinite linear;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.contacto-telefono {
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 12px;
+  font-weight: 700;
+  color: #7DBAA8;
+  grid-template-areas: "tel-tx teltx ft" "tel tel ft" ". . ft" "mail-tx mail-tx ft" "mail mail ft";
+  grid-template-columns: repeat(3.1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
 .contacto-telefono h3 {
   font-weight: 200;
   font-style: italic;
@@ -165,8 +197,26 @@ footer .tel {
   color: #337A65;
 }
 
+.tel-texto {
+  grid-area: tel-tx;
+}
+
+.tel-num {
+  grid-area: tel;
+}
+
+.mail-texto {
+  grid-area: mail-tx;
+}
+
 .mail {
   color: #253B34;
+  grid-area: mail;
+}
+
+.local {
+  grid-area: ft;
+  margin: auto;
 }
 
 /* Catalogo */
@@ -376,10 +426,28 @@ footer .tel {
   .card {
     width: calc(50% - 20px);
   }
+  .map {
+    width: 75%;
+  }
+  .contacto-telefono {
+    grid-template-areas: "tel-tx" "tel ft" "mail-tx" "mail";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 503px) {
   .card {
     width: 100%;
+  }
+  .contacto-telefono {
+    display: block;
+    margin: 0;
+  }
+  .mail {
+    font-size: smaller;
+  }
+  .local {
+    width: 250px;
   }
 }
 

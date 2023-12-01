@@ -58,10 +58,35 @@
             .card {
                 width: calc(50% - 20px); 
             }
+            .map {
+                width: 75%;
+            }
+            .contacto-telefono {
+                grid-template-areas:
+                "tel-tx"
+                "tel ft"
+                "mail-tx"
+                "mail"
+                ;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4,100px);
+            }
         }
         
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 503px) {
             .card {
                 width: 100%; 
+            }
+            .contacto-telefono {
+                display: block;
+                margin: 0;
+                
+
+            }
+            .mail {
+                font-size: smaller;
+            }
+            .local {
+                width: 250px;
             }
         }
