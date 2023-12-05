@@ -346,7 +346,6 @@ footer .tel {
 
 /* Quienes somos */
 .informacion {
-  box-sizing: border-box;
   max-width: 100%;
   display: grid;
   padding: 0 1rem;
