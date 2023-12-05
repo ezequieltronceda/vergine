@@ -67,3 +67,24 @@
     }
     
 }
+
+.terciarizar{
+    background-color: #BCE3E2;
+    border: black 1px solid;
+    text-align: justify;
+    margin-bottom: 10px;
+    p{
+       padding: 2%; 
+    }
+}
+.banner-exp {
+    padding: 50px 0px;
+    background-image: url(../../images/truck.jpg);
+    background-position: 0vmax;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    font-family: $roboto;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
