@@ -105,6 +105,7 @@ main p {
   display: flex;
   background-color: #BCE3E2;
   margin: 10px 0px;
+  padding: 2%;
 }
 .componentes .aloe {
   align-items: center;
@@ -112,6 +113,8 @@ main p {
   border: black 1px solid;
   background-color: #BCE3E2;
   margin: 10px 0px;
+  padding: 2%;
+  justify-content: center;
 }
 .componentes .vit-c {
   align-items: center;
@@ -120,6 +123,7 @@ main p {
   border: black 1px solid;
   background-color: #BCE3E2;
   margin: 10px 0px;
+  padding: 2%;
 }
 
 .terciarizar {

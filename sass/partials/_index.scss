@@ -46,15 +46,18 @@
         display: flex;
         background-color: #BCE3E2;
         margin: 10px 0px;
+        padding: 2%;
     
     }
     .aloe {
-       
+    
         align-items: center;
         display: flex;
         border: black 1px solid;
         background-color: #BCE3E2;
         margin: 10px 0px;
+        padding: 2%;
+        justify-content: center;
     }
     .vit-c {
     
@@ -64,6 +67,7 @@
         border: black 1px solid;
         background-color: #BCE3E2;
         margin: 10px 0px;
+        padding: 2%;
     }
     
 }
