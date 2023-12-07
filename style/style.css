@@ -86,6 +86,10 @@ main p {
   padding: 0px 5px;
 }
 
+.introduccion-componentes {
+  margin-top: 10px;
+}
+
 .componentes {
   list-style: none;
   width: 100%;
